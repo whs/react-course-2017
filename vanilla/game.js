@@ -1,13 +1,13 @@
-var message = document.getElementById('message');
-var timer = document.getElementById('timer');
-var clicks = 0;
-var timeStart = 0;
-var interval;
-var maxTime = 5000;
+let message = document.getElementById('message');
+let timer = document.getElementById('timer');
+let clicks = 0;
+let timeStart = 0;
+let interval;
+let maxTime = 5000;
 
 function update(){
 	message.textContent = clicks;
-	var size = (clicks/2) + 12;
+	let size = (clicks/2) + 12;
 	message.style.fontSize = size + 'pt';
 }
 
