@@ -1,0 +1,32 @@
+html, body, #app, .root{
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.root{
+	background: #222;
+	color: #dadada;
+	text-shadow: black 0px 3px 2px;
+	display: flex;
+	flex-direction: column;
+	user-select: none;
+}
+
+h1{
+	font-weight: normal;
+	font-size: 48pt;
+	text-align: center;
+}
+
+.text{
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#timer{
+	text-align: center;
+	margin: 10px 0;
+}
