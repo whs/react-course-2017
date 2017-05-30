@@ -1,0 +1,32 @@
+{
+  "name": "react-webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "game.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-register",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "css-loader": "^0.28.4",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-router-dom": "^4.1.1",
+    "style-loader": "^0.18.1",
+    "webpack": "^2.6.1"
+  },
+  "devDependencies": {
+    "@storybook/react": "^3.0.0-rc.3",
+    "babel-register": "^6.24.1",
+    "chai": "^4.0.0",
+    "mocha": "^3.4.2"
+  }
+}

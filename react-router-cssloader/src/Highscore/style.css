@@ -1,0 +1,11 @@
+.highscore{
+	border-collapse: collapse;
+}
+.highscore td{
+	border: #555 solid 1px;
+	padding: 5px;
+}
+.highscore thead td{
+	background: #444;
+	font-weight: bold;
+}

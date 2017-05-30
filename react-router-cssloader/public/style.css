@@ -1,0 +1,17 @@
+.text{
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#timer{
+	text-align: center;
+	margin: 10px 0;
+}
+
+.playagain{
+	margin: auto;
+	margin-top: 50px;
+	display: block;
+}
