@@ -30,3 +30,22 @@ h1{
 	text-align: center;
 	margin: 10px 0;
 }
+
+.highscore table{
+	margin: auto;
+	border-collapse: collapse;
+}
+.highscore table td{
+	border: #555 solid 1px;
+	padding: 5px;
+}
+.highscore thead td{
+	background: #444;
+	font-weight: bold;
+}
+
+.playagain{
+	margin: auto;
+	margin-top: 50px;
+	display: block;
+}

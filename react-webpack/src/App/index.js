@@ -6,7 +6,7 @@ import HighscoreStorage from '../Highscore/storage';
 
 export default class App extends React.Component {
 	state = {
-		mode: 'play',
+		mode: 'highscore',
 	}
 
 	highscore = new HighscoreStorage();
@@ -22,7 +22,7 @@ export default class App extends React.Component {
 			child = (
 				<div>
 					<Highscore highscore={this.highscore.highscore} />
-					<button onClick={this.playAgain.bind(this)}>Play again</button>
+					<button className="playagain" onClick={this.playAgain.bind(this)}>Play again</button>
 				</div>
 			)
 		}

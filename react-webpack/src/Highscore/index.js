@@ -14,6 +14,12 @@ export default class Highscore extends React.Component {
 			));
 		}
 
+		if(this.props.highscore.length === 0){
+			highscore = (
+				<tr><td colSpan="3" style={{textAlign: 'center'}}>ยังไม่มีคนเล่นเลย</td></tr>
+			);
+		}
+
 		return (
 			<div className="highscore">
 				<h1>Highscore</h1>
