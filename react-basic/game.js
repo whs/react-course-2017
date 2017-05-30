@@ -9,18 +9,21 @@ class Game extends React.Component {
 
 	render(){
 		let message = 'Click ตรงไหนก็ได้เพื่อเริ่มเกม';
+		let messageStyle = {};
 		let timer;
 
 		if(this.state.gameStarted){
 			message = this.state.clicks;
 			timer = 'เหลือเวลาอีก ' + this.formatTime(this.getTimeLeft()) + ' วินาที';
+
+			messageStyle.fontSize = (this.state.clicks/2) + 12;
 		}
 
 		return (
 			<div onClick={this.onClick.bind(this)} className="root">
 				<h1>Clickr</h1>
 				<div className="text">
-					<div className="text-inner" id="message">{message}</div>
+					<div className="text-inner" id="message" style={messageStyle}>{message}</div>
 				</div>
 				<div id="timer">{timer}</div>
 			</div>
@@ -69,6 +72,9 @@ class Game extends React.Component {
 	}
 
 	formatTime(time){
+		if(time < 0){
+			time = 0;
+		}
 		return Math.ceil(time / 100)/10;
 	}
 }
